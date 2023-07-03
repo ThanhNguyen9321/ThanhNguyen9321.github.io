@@ -1,0 +1,179 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "inter", sans-serif;
+  color: #202020;
+  margin: 0 auto;
+  font-size: 8pt;
+  line-height: 1.5;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 100px;
+}
+.banner {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: rgb(255, 255, 255);
+}
+.banner-relative {
+  position: relative;
+}
+.banner-absolute {
+  position: absolute;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 52px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.nav-bar > div {
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(175, 175, 175);
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
+.container {
+  margin: auto;
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+ul {
+  list-style: none;
+}
+.container-target {
+  background-color: rgb(240, 240, 240);
+  padding: 50px 50px;
+}
+.container-info {
+  background-color: rgb(230, 230, 230);
+  padding: 50px 50px;
+}
+h2 {
+  font-size: 12pt;
+}
+.job-info {
+  width: 1000px;
+  margin: auto;
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  gap: 30px 30px;
+}
+.job-info-item {
+  padding: 20px 20px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(216, 215, 215);
+}
+.job-info-item-ic {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.job-info-item-thangdiem1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 5px;
+  width: 45px;
+}
+.job-info-item-thangdiem2 {
+  background: #8d9aa0;
+  display: inline-block;
+  height: 2px;
+  margin-right: 5px;
+  width: 45px;
+}
+.job-info-point {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 47, 255);
+  border: 1px solid white;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.job-info-ic {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.job-info-sothich {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.job-info-sothich > div {
+  text-align: center;
+  margin: 5px;
+  font-size: 12px;
+}
+.chungchi-giaithuong {
+  margin-top: 30px;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.chungchi-giaithuong-1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+table {
+  text-align: left;
+}
+.project {
+  font-size: 12px;
+  display: grid;
+  margin-left: 100px;
+  margin-top: 30px;
+  grid-template-columns: 31% 31% 31%;
+  gap: 30px 30px;
+}
+.project-flex {
+  display: flex;
+  justify-content: start;
+}
+.project-flex > div {
+  text-align: center;
+  margin: 5px;
+}
+.project-2021 {
+  width: 40px;
+  height: 20px;
+  background-color: #00a2ff;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  color: white;
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
