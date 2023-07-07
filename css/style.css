@@ -93,6 +93,7 @@ h2 {
   border: 1px solid rgb(216, 215, 215);
 }
 .job-info-item-ic {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 75% 25%;
 }
@@ -123,38 +124,46 @@ li::marker {
   width: 45px;
 }
 .job-info-ic {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  line-height: 50px;
-  width: 40px;
-  height: 40px;
-  border: 1px solid black;
+  color: #199cdb;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
+  border: 1px solid #199cdb;
+  line-height: 35px;
+  text-align: center;
 }
 .job-info-sothich {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-
-  line-height: 30px;
+  gap: 25px;
+  text-align: center;
 }
 .job-info-sothich > div {
   text-align: center;
-  margin: 5px;
+  margin: 0px;
   font-size: 12px;
 }
 .chungchi-giaithuong {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   margin-left: 100px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 .chungchi-giaithuong-1 {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 40% 60%;
 }
 table {
+  margin-bottom: 10px;
   text-align: left;
+  vertical-align: top;
+  border-collapse: collapse;
+}
+th {
+  border: 1px solid black;
 }
 .project {
   font-size: 12px;
