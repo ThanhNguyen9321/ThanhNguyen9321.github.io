@@ -7,21 +7,20 @@ body {
   font-family: "inter", sans-serif;
   color: #202020;
   margin: 0 auto;
-  font-size: 8pt;
+  font-size: 10pt;
   line-height: 1.5;
 }
 .bg-grey {
   background: #f7f7f7;
 }
-header {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 100px;
-}
+/* định dạng kích thước của trang */
 section {
   width: 1350px;
   margin: auto;
+}
+section h1 {
+  font-size: 20px;
+  font-style: normal;
 }
 .banner {
   width: 1350px;
@@ -34,9 +33,7 @@ section {
   align-items: center;
   color: rgb(255, 255, 255);
 }
-.banner-relative {
-  position: relative;
-}
+/* định vị cho tên ở trong banner*/
 .banner-absolute {
   position: absolute;
   transform: rotate(50 50);
@@ -49,6 +46,7 @@ section {
 .banner h1 {
   font-size: 52px;
 }
+/* tạo grid cho nav-bar */
 .nav-bar {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -65,6 +63,7 @@ section {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+/* cho kiểu của danh sách về không có gì */
 ul {
   list-style: none;
 }
@@ -103,6 +102,7 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+/* tạo dấu chấm tròn màu xanh trước các mục */
 li::marker {
   color: blue;
   border: 1px solid white;
@@ -152,7 +152,7 @@ li::marker {
   grid-template-columns: 50% 50%;
 }
 .chungchi-giaithuong-1 {
-  margin-top: 20px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 40% 60%;
 }
@@ -160,10 +160,7 @@ table {
   margin-bottom: 10px;
   text-align: left;
   vertical-align: top;
-  border-collapse: collapse;
-}
-th {
-  border: 1px solid black;
+  border: 1px solid gainsboro;
 }
 .project {
   font-size: 12px;
@@ -179,19 +176,26 @@ th {
 }
 .project-flex > div {
   text-align: center;
-  margin: 5px;
+  margin: 10px;
+}
+.project-border {
+  border: 1px solid gainsboro;
 }
 .project-2021 {
   width: 40px;
   height: 20px;
   background-color: #00a2ff;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+  border-radius: 15%;
   color: white;
 }
-
+.project-borderbottom {
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+.project h2 {
+  font-style: normal;
+  margin: 10px;
+}
 .footer {
   margin-top: 30px;
   display: flex;
