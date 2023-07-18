@@ -1,204 +1,315 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
   font-family: "inter", sans-serif;
+  width: 1300px;
   color: #202020;
   margin: 0 auto;
-  font-size: 10pt;
+  font-size: 12px;
   line-height: 1.5;
 }
-.bg-grey {
-  background: #f7f7f7;
+header {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 100px;
 }
-/* định dạng kích thước của trang */
-section {
-  width: 1350px;
-  margin: auto;
-}
-section h1 {
-  font-size: 20px;
-  font-style: normal;
-}
-.banner {
-  width: 1350px;
-  margin: auto;
-  max-height: 400px;
-  overflow: hidden;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(255, 255, 255);
-}
-/* định vị cho tên ở trong banner*/
-.banner-absolute {
-  position: absolute;
-  transform: rotate(50 50);
-  text-align: center;
-}
-.banner-img {
-  position: absolute;
-  margin-top: 400px;
-}
-.banner h1 {
-  font-size: 52px;
-}
-/* tạo grid cho nav-bar */
-.nav-bar {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-.nav-bar > div {
-  padding: 10px 20px;
-  border: 1px solid rgb(236, 236, 236);
-  height: 40px;
-  line-height: 20px;
-  font-size: 12px;
-}
-.container {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-/* cho kiểu của danh sách về không có gì */
+
 ul {
   list-style: none;
 }
-.container-target {
-  background-color: rgb(240, 240, 240);
-  padding: 50px 50px;
+.banner {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  position: relative;
 }
-.container-info {
-  background-color: rgb(230, 230, 230);
-  padding: 50px 50px;
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-h2 {
-  font-size: 12pt;
+/* navbar */
+.nav {
+  flex-direction: row;
+  align-content: center;
+  position: relative;
 }
-.job-info {
-  width: 1000px;
+.nav > div {
+  width: 25%;
+  line-height: 1.25rem;
+  border: 1px solid rgb(236, 236, 236);
+  padding: 10px;
+}
+.nav-right {
+  text-align: end;
+}
+.nav-left {
+  text-align: start;
+}
+.banner-avatar {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+/* info */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 12px;
+}
+.about p {
+  text-align: justify;
+}
+.about h2 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.about li {
+  margin-left: -30px;
+}
+.about i {
+  color: rgb(0, 102, 255);
+}
+.about-target {
+  width: 50%;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+.about-information {
+  width: 50%;
+  list-style: none;
+  padding: 40px;
+  background-color: #e4e4e4;
+}
+
+/* job */
+.job {
+  width: 1100px;
   margin: auto;
   padding: 30px 50px;
   display: grid;
-  grid-template-columns: 31% 31% 31%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
   gap: 30px 30px;
 }
-.job-info-item {
-  padding: 20px 20px;
-  background-color: rgb(240, 240, 240);
-  border: 1px solid rgb(216, 215, 215);
-}
-.job-info-item-ic {
-  margin-top: 20px;
+
+.job-grid {
   display: grid;
   grid-template-columns: 75% 25%;
 }
-.job-info-item-ul {
+.job h2 {
+  font-size: 20px;
+}
+
+.job h3 {
+  font-size: 15px;
+}
+.job p {
+  margin-left: 15px;
+  font-style: italic;
+}
+.job-exp span {
+  background-color: #00a2ff;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.job-exp {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  text-align: justify;
+}
+.job li {
+  margin-left: -30px;
+}
+.job-ul {
   list-style: disc;
   margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* tạo dấu chấm tròn màu xanh trước các mục */
 li::marker {
   color: blue;
   border: 1px solid white;
-  font-size: 15px;
+  font-size: 20px;
 }
-
-.job-info-item-thangdiem1 {
+.job-point-ladder-1 {
   background: #199cdb;
   display: inline-block;
   height: 2px;
   margin-right: 5px;
   width: 45px;
 }
-.job-info-item-thangdiem2 {
+.job-point-ladder-2 {
   background: #8d9aa0;
   display: inline-block;
   height: 2px;
   margin-right: 5px;
   width: 45px;
 }
-.job-info-ic {
-  color: #199cdb;
-  width: 35px;
-  height: 35px;
+.job-education {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  text-align: justify;
+}
+.job-work {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  text-align: justify;
+}
+.job-interest {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  text-align: justify;
+}
+.job-interest-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 20px;
+}
+.job-interest-icon {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px solid #199cdb;
-  line-height: 35px;
+  border: 1px solid black;
+  line-height: 40px;
   text-align: center;
 }
-.job-info-sothich {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  text-align: center;
+.job-interest p {
+  font-style: normal;
+  padding-left: 10px;
 }
-.job-info-sothich > div {
-  text-align: center;
-  margin: 0px;
+
+.job-language {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  text-align: justify;
+}
+.job-skill {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* project */
+.text-title {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.achievement {
   font-size: 12px;
+  width: 100%;
+  background-color: #e0e0e0;
+  padding: 20px;
 }
-.chungchi-giaithuong {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 100px;
+.achievement-container {
+  width: 1000px;
+  margin: auto;
+}
+.achievement-grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 30px;
 }
-.chungchi-giaithuong-1 {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 40% 60%;
+.achievement-flex {
+  display: flex;
+  gap: 0px;
 }
-table {
-  margin-bottom: 10px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid gainsboro;
+.achievement-tittle {
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
+
 .project {
+  width: 1000px;
+  background-color: white;
+  margin: auto;
+  padding-top: 20px;
   font-size: 12px;
-  display: grid;
-  margin-left: 100px;
-  margin-top: 30px;
-  grid-template-columns: 31% 31% 31%;
-  gap: 30px 30px;
 }
-.project-flex {
+
+.project-container {
   display: flex;
-  justify-content: start;
+  margin-left: -20px;
 }
-.project-flex > div {
-  text-align: center;
-  margin: 10px;
+.project-cv {
+  width: calc(33.33%-20px);
+  /* overflow: hidden; */
+  margin-left: 20px;
+  border: 1px solid #d1d1d1;
 }
-.project-border {
-  border: 1px solid gainsboro;
+.project-image {
+  width: 100%;
+}
+.project-tittle {
+  padding: 20px;
+  font-weight: 500;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #d1d1d1;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.project-content {
+}
+.project-content-top {
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  gap: 25px;
+  border-bottom: 1px solid #d1d1d1;
 }
 .project-2021 {
-  width: 40px;
+  width: 50px;
   height: 20px;
-  background-color: #00a2ff;
-  border-radius: 15%;
+  background-color: #00aeff;
   color: white;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 12px;
 }
-.project-borderbottom {
-  padding: 10px;
-  border-bottom: 1px solid gainsboro;
+.project-content td {
+  padding-top: 5px;
+  padding-right: 5px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 5px;
 }
-.project h2 {
-  font-style: normal;
-  margin: 10px;
+.project-content th {
+  width: 80px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
+
 .footer {
-  margin-top: 30px;
+  background-color: #d1d1d1;
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 20px;
+  font-style: normal;
+  color: #8a8a8a;
+  padding-top: 10px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.footer i {
+  font-size: 30px;
+  color: #00aeff;
+}
+.footer p {
+  margin-left: -20px;
 }
