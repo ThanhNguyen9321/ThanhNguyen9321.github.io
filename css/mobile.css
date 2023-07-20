@@ -1,15 +1,12 @@
-@media only screen and(max-width: 1024px) {
+@media screen and(max-width: 576px) {
   .nav {
-    display: block;
+    display: none;
+  }
+  .banner-avatar {
+    display: none;
   }
   .about {
     display: flex;
     flex-direction: column;
-  }
-  .about-target {
-    width: 100%;
-  }
-  .about-infomation {
-    width: 100%;
   }
 }

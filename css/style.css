@@ -5,7 +5,7 @@
 }
 body {
   font-family: "inter", sans-serif;
-  width: 1300px;
+  width: 100%;
   color: #202020;
   margin: 0 auto;
   font-size: 12px;
@@ -29,6 +29,10 @@ ul {
   color: rgb(255, 255, 255);
   position: relative;
 }
+.banner-img {
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+}
 .banner-text {
   position: absolute;
   top: 50%;
@@ -38,11 +42,12 @@ ul {
 }
 /* navbar */
 .nav {
-  flex-direction: row;
+  width: 100%;
+  display: flex;
   align-content: center;
   position: relative;
 }
-.nav > div {
+.nav div {
   width: 25%;
   line-height: 1.25rem;
   border: 1px solid rgb(236, 236, 236);
@@ -54,7 +59,7 @@ ul {
 .nav-left {
   text-align: start;
 }
-.banner-avatar {
+.nav-avatar {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -66,7 +71,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 12px;
 }
 .about p {
   text-align: justify;
@@ -81,16 +85,25 @@ ul {
 .about i {
   color: rgb(0, 102, 255);
 }
-.about-target {
-  width: 50%;
+#about-target {
+  width: 100%;
   padding: 40px;
   background-color: #f0f0f0;
 }
-.about-information {
-  width: 50%;
+.about-info {
   list-style: none;
+}
+#about-info {
+  width: 100%;
   padding: 40px;
   background-color: #e4e4e4;
+}
+#about-info .about-info {
+  display: none;
+}
+#email-error {
+  color: red;
+  font-weight: 400;
 }
 
 /* job */
@@ -247,7 +260,6 @@ li::marker {
 }
 .project-cv {
   width: calc(33.33%-20px);
-  /* overflow: hidden; */
   margin-left: 20px;
   border: 1px solid #d1d1d1;
 }
