@@ -1,4 +1,4 @@
-@media screen and(max-width: 576px) {
+@media screen and (max-width: 576px) {
   .nav {
     display: none;
   }
@@ -6,7 +6,6 @@
     display: none;
   }
   .about {
-    display: flex;
     flex-direction: column;
   }
 }

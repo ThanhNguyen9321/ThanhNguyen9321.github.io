@@ -71,6 +71,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .about p {
   text-align: justify;
@@ -86,7 +87,7 @@ ul {
   color: rgb(0, 102, 255);
 }
 #about-target {
-  width: 100%;
+  flex: 50%;
   padding: 40px;
   background-color: #f0f0f0;
 }
@@ -94,7 +95,7 @@ ul {
   list-style: none;
 }
 #about-info {
-  width: 100%;
+  flex: 50%;
   padding: 40px;
   background-color: #e4e4e4;
 }
@@ -108,7 +109,7 @@ ul {
 
 /* job */
 .job {
-  width: 1100px;
+  width: 100%;
   margin: auto;
   padding: 30px 50px;
   display: grid;
@@ -228,7 +229,7 @@ li::marker {
   padding: 20px;
 }
 .achievement-container {
-  width: 1000px;
+  width: 100%;
   margin: auto;
 }
 .achievement-grid {
@@ -247,7 +248,7 @@ li::marker {
 }
 
 .project {
-  width: 1000px;
+  width: 100%;
   background-color: white;
   margin: auto;
   padding-top: 20px;

@@ -1,6 +1,6 @@
 function handleSubmit() {
   //lấy giá trị của nhập vào email
-  const emailValue = document.getElementById("email");
+  const emailValue = document.getElementById("email").value;
   //lấy hiển thị lỗi email
   const emailError = document.getElementById("email-error");
   // điều kiện để email đúng
@@ -15,8 +15,8 @@ function handleSubmit() {
   if (checkMail) {
     sectionContent.style.display = "block";
     submitControl.style.display = "none";
-    errollEmail.innerHTML = "";
+    emailError.innerHTML = "";
   } else {
-    errollEmail.innerHTML = "email không đúng, vui lòng nhập lại";
+    emailError.innerHTML = "email không đúng, vui lòng nhập lại";
   }
 }

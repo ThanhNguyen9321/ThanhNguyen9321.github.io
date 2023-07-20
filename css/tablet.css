@@ -2,4 +2,10 @@
   .nav {
     display: none;
   }
+  .banner-avatar {
+    display: none;
+  }
+  .about {
+    flex-direction: column;
+  }
 }
