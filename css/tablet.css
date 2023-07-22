@@ -1,9 +1,12 @@
 @media screen and (max-width: 992px) {
   .nav {
+    display: none !important;
+  }
+  .nav-avatar {
     display: none;
   }
-  .banner-avatar {
-    display: none;
+  .nav div {
+    display: none !important;
   }
   .about {
     flex-direction: column;

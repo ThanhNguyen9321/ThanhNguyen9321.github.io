@@ -29,10 +29,10 @@ ul {
   color: rgb(255, 255, 255);
   position: relative;
 }
-.banner-img {
+/* .banner-img {
   background-image: url(/images/banner.jpg);
   background-size: cover;
-}
+} */
 .banner-text {
   position: absolute;
   top: 50%;
@@ -52,6 +52,7 @@ ul {
   line-height: 1.25rem;
   border: 1px solid rgb(236, 236, 236);
   padding: 10px;
+  text-transform: uppercase;
 }
 .nav-right {
   text-align: end;
@@ -109,16 +110,11 @@ ul {
 
 /* job */
 .job {
-  width: 100%;
   margin: auto;
   padding: 30px 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr auto;
   justify-content: center;
   gap: 30px 30px;
 }
-
 .job-grid {
   display: grid;
   grid-template-columns: 75% 25%;
@@ -232,14 +228,10 @@ li::marker {
   width: 100%;
   margin: auto;
 }
-.achievement-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px 30px;
-}
 .achievement-flex {
   display: flex;
   gap: 0px;
+  margin-bottom: 20px;
 }
 .achievement-tittle {
   font-size: 12px;

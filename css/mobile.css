@@ -1,11 +1,24 @@
 @media screen and (max-width: 576px) {
   .nav {
-    display: none;
+    flex-direction: column;
+    align-content: flex-start;
   }
-  .banner-avatar {
+  .nav div {
+    width: 100%;
+  }
+  .nav-right {
+    text-align: start;
+  }
+  .nav-avatar {
     display: none;
   }
   .about {
     flex-direction: column;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+  .project-cv {
+    margin-bottom: 20px;
   }
 }
