@@ -48,3 +48,23 @@ function handleSubmit() {
     emailError.innerHTML = "email không đúng, vui lòng nhập lại";
   }
 }
+function handleOnmouseOver(element) {
+  const viewMore = element.querySelector(".view-more");
+  viewMore.style.display = "inline-block";
+}
+function handleOnmouseOut(element) {
+  const viewMore = element.querySelector(".view-more");
+  viewMore.style.display = "none";
+}
+
+function handleViewMore(element) {
+  const parentElement = element.closest(".parent");
+  const viewMore = parentElement.querySelector(".view-more");
+  const lessMore = parentElement.querySelector(".less-more");
+  viewMore.style.display = "none";
+  lessMore.style.display = "block";
+  const jobContent = parentElement.querySelectorAll(".job-content");
+  jobContent.forEach((element) => {
+    element.style.display = "block";
+  });
+}

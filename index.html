@@ -89,55 +89,61 @@
     </section>
     <section>
       <div class="job row">
-        <div class="job-exp col-lg-3 col-md-4 col-sm-12">
+        <div class="job-exp col-lg-3 col-md-4 col-sm-12 parent" id="exp" onmouseover="handleOnmouseOver(this)" onmouseout="handleOnmouseOut(this)">
           <div class="job-grid">
             <h2>Kinh nghiệm</h2>
             <i class="ic-toolbox" style="font-size: 35px"></i>
           </div>
-          <ul class="job-ul">
-            <li>
-              <div>
-                <h3> Full Stack-Developer - Công ty Y</h3>
-                <p>
-                  05/2022 -
-                  <!-- tạo khung, bo góc, cho màu nề là màu #00a2ff và màu chữ thành màu white -->
-                  <span> Hiện tại </span>
-                </p>
-                <ul>
-                  <li>
-                    - Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu
-                    sẵn có.
-                  </li>
-                  <li>
-                    - Phân tích và thiết kế Database, sử dụng các hệ quản trị
-                    CSDL (MySQL, SQLSever, NoSQL, ...) và viết được các câu truy
-                    vấn.
-                  </li>
-                  <li>
-                    - Sử dụng ngôn ngữ sever-side (Python, Java, ...) để xây
-                    dựng các eerb sever
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3> Web Designer - Công ty X</h3>
-                <p>06/2021 - 04/2022</p>
-                <ul>
-                  <li>- Thiết kế website dựa trên yêu cầu của khách hàng.</li>
-                  <li>- Sử dụng các công cụ Figma, Canva, PTS.</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+          <div class="job-content">
+            <ul class="job-ul">
+              <li>
+                <div>
+                  <h3> Full Stack-Developer - Công ty Y</h3>
+                  <p>
+                    05/2022 -
+                    <!-- tạo khung, bo góc, cho màu nề là màu #00a2ff và màu chữ thành màu white -->
+                    <span> Hiện tại </span>
+                  </p>
+                  <ul>
+                    <li>
+                      - Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu
+                      sẵn có.
+                    </li>
+                    <li>
+                      - Phân tích và thiết kế Database, sử dụng các hệ quản trị
+                      CSDL (MySQL, SQLSever, NoSQL, ...) và viết được các câu truy
+                      vấn.
+                    </li>
+                    <li>
+                      - Sử dụng ngôn ngữ sever-side (Python, Java, ...) để xây
+                      dựng các eerb sever
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3> Web Designer - Công ty X</h3>
+                  <p>06/2021 - 04/2022</p>
+                  <ul>
+                    <li>- Thiết kế website dựa trên yêu cầu của khách hàng.</li>
+                    <li>- Sử dụng các công cụ Figma, Canva, PTS.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="control-view ">
+            <button type="button" class="button view-more" onclick="handleViewMore(this)">View more</button>
+            <button type="button" class="button less-more" onclick="handleLessMore(this)">Less more</button>
+          </div>
         </div>
-        <div class="job-education col-lg-3 col-md-4 col-sm-12">
+        <div class="job-education col-lg-3 col-md-4 col-sm-12 parent" id="education" onmouseover="handleOnmouseOver(this)" onmouseout="handleOnmouseOut(this)">
           <div class="job-grid">
             <h2>Học vấn</h2>
             <i class="ic-pencil" style="font-size: 35px"></i>
           </div>
-          <div>
+          <div class="job-content">
             <ul class="job-ul">
               <li>
                 <div>
@@ -163,62 +169,72 @@
               </li>
             </ul>
           </div>
+          <div class="control-view ">
+            <button type="button" class="button view-more" onclick="handleViewMore(this)">View more</button>
+            <button type="button" class="button less-more" onclick="handleLessMore(this)">Less more</button>
+          </div>
         </div>
-        <div class="job-work  col-lg-3 col-md-4 col-sm-12">
+        <div class="job-work  col-lg-3 col-md-4 col-sm-12 parent" id="work" onmouseover="handleOnmouseOver(this)" onmouseout="handleOnmouseOut(this)">
           <div class="job-grid">
             <h2>Hoạt động</h2>
             <i class="ic-toolbox" style="font-size: 35px"></i>
           </div>
-          <ul class="job-ul">
-            <li>
-              <div>
-                <h3> FPT Edu Hackathon 2019</h3>
-                <p>03/2019-05/2019</p>
-                <ul>
-                  <li>- Giải 3 bảng A</li>
-                  <li>- Đề tài: Trang web về phân loại rác thải.</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3> Câu lạc bộ Z</h3>
-                <p>08/2016-08/2017</p>
-                <ul>
-                  <li>- Trưởng ban chuyên môn</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+          <div class="job-content">
+            <ul class="job-ul">
+              <li>
+                <div>
+                  <h3> FPT Edu Hackathon 2019</h3>
+                  <p>03/2019-05/2019</p>
+                  <ul>
+                    <li>- Giải 3 bảng A</li>
+                    <li>- Đề tài: Trang web về phân loại rác thải.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3> Câu lạc bộ Z</h3>
+                  <p>08/2016-08/2017</p>
+                  <ul>
+                    <li>- Trưởng ban chuyên môn</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="control-view ">
+            <button type="button" class="button view-more" onclick="handleViewMore(this)">View more</button>
+            <button type="button" class="button less-more" onclick="handleLessMore(this)">Less more</button>
+          </div>
         </div>
-        <div class="job-interest col-lg-3 col-md-4 col-sm-12">
+        <div class="job-interest col-lg-3 col-md-4 col-sm-12 parent" id="interest" onmouseover="handleOnmouseOver(this)" onmouseout="handleOnmouseOut(this)">
           <div class="job-grid">
             <h2>Sở thích</h2>
             <i class="ic-telescope" style="font-size: 35px"></i>
           </div>
-          <div class="job-interest-grid">
-            <div>
+          <div class="d-flex job-content">
+            <div class="job-interest-flex-1">
               <div class="job-interest-icon">
                 <i class="ic-megaphone" style="font-size: 15px"></i>
               </div>
               <br />
               <p style="margin-left: -15px">Âm nhạc</p>
             </div>
-            <div>
+            <div class="job-interest-flex-1">
               <div class="job-interest-icon">
                 <i class="ic-strategy" style="font-size: 15px"></i>
               </div>
               <br />
               <p style="margin-left: -15px">Chơi game</p>
             </div>
-            <div>
+            <div class="job-interest-flex-1">
               <div class="job-interest-icon">
                 <i class="ic-hotairballoon" style="font-size: 15px"></i>
               </div>
               <br />
               <p style="margin-left: -5px">Du lịch</p>
             </div>
-            <div>
+            <div class="job-interest-flex-1">
               <div class="job-interest-icon">
                 <i class="ic-basket" style="font-size: 15px"></i>
               </div>
@@ -226,43 +242,59 @@
               <p style="margin-left: -5px">Nấu ăn</p>
             </div>
           </div>
+          <div class="control-view ">
+            <button type="button" class="button view-more" onclick="handleViewMore(this)">View more</button>
+            <button type="button" class="button less-more" onclick="handleLessMore(this)">Less more</button>
+          </div>
         </div>
-        <div class="job-language col-lg-3 col-md-4 col-sm-12">
+        <div class="job-language col-lg-3 col-md-4 col-sm-12 parent" id="language" onmouseover="handleOnmouseOver(this)" onmouseout="handleOnmouseOut(this)">
           <div class="job-grid">
             <h2>Ngôn ngữ</h2>
             <i class="ic-mic" style="font-size: 35px"></i>
           </div>
-          <div style="margin-top: 20px">Tiếng Anh - IELtS 7.0</div>
-          <span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-2"></span>
-          <div style="margin-top: 10px">Tiếng Nhật - JLPT N4</div>
-          <span class="job-point-ladder-1"></span>
-          <span class="job-point-ladder-1"></span>
-          <span class="job-point-ladder-1"></span>
+          <div class="job-content">
+            <div style="margin-top: 20px">Tiếng Anh - IELtS 7.0</div>
+            <span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-2"></span>
+            <div style="margin-top: 10px">Tiếng Nhật - JLPT N4</div>
+            <span class="job-point-ladder-1"></span>
+            <span class="job-point-ladder-1"></span>
+            <span class="job-point-ladder-1"></span>
+          </div>
+          <div class="control-view ">
+            <button type="button" class="button view-more" onclick="handleViewMore(this)">View more</button>
+            <button type="button" class="button less-more" onclick="handleLessMore(this)">Less more</button>
+          </div>
         </div>
-        <div class="job-skill col-lg-3 col-md-4 col-sm-12">
+        <div class="job-skill col-lg-3 col-md-4 col-sm-12 parent" id="skill" onmouseover="handleOnmouseOver(this)" onmouseout="handleOnmouseOut(this)">
           <div class="job-grid">
             <h2>Kỹ năng</h2>
             <i class="ic-tools-2" style="font-size: 35px"></i>
           </div>
-          <div style="margin-top: 20px">HTML/CSS: Fundamental</div>
-          <span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-2"></span>
-          <div style="margin-top: 10px">Javascript: Intermadiate</div>
-          <span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-2"></span>
-          <div style="margin-top: 10px">NodeJS: Intermadiate</div>
-          <span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-1"></span
-          ><span class="job-point-ladder-1"></span>
-          <div style="margin-top: 10px">Bootstrap: Fundamental</div>
-          <span class="job-point-ladder-1"></span>
-          <span class="job-point-ladder-2"></span>
-          <span class="job-point-ladder-2"></span>
-          <div style="margin-bottom: 20px"></div>
+          <div class="job-content">
+            <div style="margin-top: 20px">HTML/CSS: Fundamental</div>
+            <span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-2"></span>
+            <div style="margin-top: 10px">Javascript: Intermadiate</div>
+            <span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-2"></span>
+            <div style="margin-top: 10px">NodeJS: Intermadiate</div>
+            <span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-1"></span
+            ><span class="job-point-ladder-1"></span>
+            <div style="margin-top: 10px">Bootstrap: Fundamental</div>
+            <span class="job-point-ladder-1"></span>
+            <span class="job-point-ladder-2"></span>
+            <span class="job-point-ladder-2"></span>
+            <div style="margin-bottom: 20px"></div>
+          </div>
+          <div class="control-view ">
+            <button type="button" class="button view-more" onclick="handleViewMore(this)">View more</button>
+            <button type="button" class="button less-more" onclick="handleLessMore(this)">Less more</button>
+          </div>
         </div>
       </div>
     </section>
