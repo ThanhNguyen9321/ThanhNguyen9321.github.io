@@ -1,12 +1,15 @@
 @media screen and (max-width: 992px) {
-  .nav {
-    display: none !important;
-  }
   .nav-avatar {
     display: none;
   }
-  .nav div {
-    display: none !important;
+  .nav {
+    align-content: center;
+  }
+  .nav-right {
+    text-align: center;
+  }
+  .nav-left {
+    text-align: center;
   }
   .about {
     flex-direction: column;

@@ -1,13 +1,15 @@
 @media screen and (max-width: 576px) {
   .nav {
     flex-direction: column;
-    align-content: flex-start;
   }
   .nav div {
     width: 100%;
   }
   .nav-right {
-    text-align: start;
+    text-align: left;
+  }
+  .nav-left {
+    text-align: left;
   }
   .nav-avatar {
     display: none;

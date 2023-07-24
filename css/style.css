@@ -44,7 +44,7 @@ ul {
 .nav {
   width: 100%;
   display: flex;
-  align-content: center;
+  text-align: center;
   position: relative;
 }
 .nav div {
@@ -53,6 +53,13 @@ ul {
   border: 1px solid rgb(236, 236, 236);
   padding: 10px;
   text-transform: uppercase;
+}
+.nav a {
+  text-decoration: none;
+  color: #202020;
+}
+.nav i {
+  color: #00a2ff;
 }
 .nav-right {
   text-align: end;
@@ -117,7 +124,6 @@ ul {
   margin: auto;
   padding: 30px 50px;
   justify-content: center;
-  gap: 30px 30px;
 }
 .job-content {
   padding-left: 10px;
