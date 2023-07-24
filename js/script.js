@@ -49,22 +49,37 @@ function handleSubmit() {
   }
 }
 function handleOnmouseOver(element) {
-  const viewMore = element.querySelector(".view-more");
+  const viewMore = element.querySelector(".control-view");
   viewMore.style.display = "inline-block";
 }
 function handleOnmouseOut(element) {
-  const viewMore = element.querySelector(".view-more");
-  viewMore.style.display = "none";
+  const viewMore = element.querySelector(".control-view");
+  if (!viewMore.classList.value.includes("less-more"))
+    viewMore.style.display = "none";
 }
 
 function handleViewMore(element) {
   const parentElement = element.closest(".parent");
-  const viewMore = parentElement.querySelector(".view-more");
-  const lessMore = parentElement.querySelector(".less-more");
-  viewMore.style.display = "none";
-  lessMore.style.display = "block";
+  const viewMore = parentElement.querySelector(".control-view");
   const jobContent = parentElement.querySelectorAll(".job-content");
-  jobContent.forEach((element) => {
-    element.style.display = "block";
-  });
+  if (viewMore.classList.value.includes("view-more")) {
+    jobContent.forEach((element) => {
+      element.style.display = "block";
+    });
+    viewMore.classList.remove("view-more");
+    viewMore.classList.add("less-more");
+    viewMore.innerHTML = "Less more";
+  } else {
+    jobContent.forEach((element) => {
+      element.style.display = "none";
+    });
+    viewMore.classList.remove("less-more");
+    viewMore.classList.add("view-more");
+    viewMore.innerHTML = "View more";
+  }
+  // viewMore.style.display = "none";
+  // const jobContent = parentElement.querySelectorAll(".job-content");
+  // jobContent.forEach((element) => {
+  //   element.style.display = "block";
+  // });
 }

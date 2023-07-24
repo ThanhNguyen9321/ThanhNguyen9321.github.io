@@ -293,6 +293,10 @@ li::marker {
   margin-left: 20px;
   border: 1px solid #d1d1d1;
 }
+.project-cv a {
+  text-align: center;
+  font-size: 20px;
+}
 .project-image {
   width: 100%;
 }
